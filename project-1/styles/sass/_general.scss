@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1.8px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
