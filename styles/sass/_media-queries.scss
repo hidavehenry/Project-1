@@ -1,0 +1,220 @@
+/* Home page */
+
+@media (max-width: 900px) {
+
+  .mobileMenu {
+    visibility: visible;
+  }
+  
+  .navBar {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    
+    li {
+      margin: 5px;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 700px) {
+  
+  .mobileMenu {
+    visibility: visible;
+  }
+
+  .navBar, .contactNavBar {
+
+    li {
+      display: none;
+    }
+  }
+}
+
+/* Home - Branding Section */
+
+@media (max-width: 800px) {
+
+  .circleText {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    z-index: 999;
+    width: 20vw;
+  }
+
+  .container2 {
+
+    .blurbWrapper {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+}
+
+
+/* Home - Features Sections */
+
+@media (max-width: 1000px) {
+
+  .featuresWrapper {
+    background-image: url(/creative-designAndAssets/assets/home-4.jpeg);
+    width: 100%;
+  }
+
+
+  .featuresColumn {
+    display: flex;
+
+  }
+
+  .featuresColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 9% 0;
+    align-content: flex-end;
+  }
+  .featureCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 5vw;
+    height: auto;
+  }
+}
+
+/* Home - Team Section */ 
+
+@media (max-width: 600px) {
+
+  .teamContainer {
+    margin: 15%;
+    width: 100%;
+  }
+
+  .teamWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "teamBlurb teamBlurb"
+      "teamMate1 teamMate2"
+      "teamMate3 teamMate4"
+      "teamMate5 teamEndBlurb";
+  }
+  
+  .teamBlurb { grid-area: teamBlurb; }
+  .teamMate1 { grid-area: teamMate1; }
+  .teamMate2 { grid-area: teamMate2; }
+  .teamMate3 { grid-area: teamMate3; }
+  .teamMate4 { grid-area: teamMate4; }
+  .teamMate5 { grid-area: teamMate5; }
+  .teamEndBlurb { grid-area: teamEndBlurb; 
+  }
+}
+
+
+/* Portfolio Section */
+
+@media (max-width: 690px) {
+
+  .portfolioContainer {
+    background: $primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;;
+  }
+
+  .porfolioText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 80%;
+  }
+
+  .portfolioImageContainer, .porfolioImage {
+    display: none;
+
+  }
+}
+
+/* Footer Section */
+
+@media (max-width: 850px) {
+
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contactUsContainer, .signupContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .postsContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactUsContainer, .signupContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .postsContainer {
+    display: none;
+  }
+}
+
+
+/* Contact Us */
+
+@media (max-width: 660px){
+
+  .contactHeaderText {
+    position: sticky;
+    font-size: 28px;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 20%;
+  }
+
+  .contactBlurb {
+    width: 100%;
+  }
+
+  .contactWrapper {
+    justify-content: space-around;
+
+    .address {
+      border: none;
+      padding: 0 50px;
+    }
+
+  }
+}
